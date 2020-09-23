@@ -2,7 +2,7 @@
   "name": "testesky",
   "version": "1.0.0",
   "description": "Teste Sky",
-  "main": "./src/server.ts",
+  "main": "index.js",
   "author": "Magno Belloni",
   "license": "MIT",
   "scripts": {

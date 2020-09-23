@@ -1,14 +1,11 @@
 {
     "type": "mongodb",
-    "url": "mongodb+srv://deploy_sky:BSOHU6D8WbeTDALE@cluster0.olzhy.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "uri": "mongodb+srv://deploy_sky:JiAOvBMGwHALAnii@cluster0.olzhy.mongodb.net/testesky?retryWrites=true&w=majority",
     "useUnifiedTopology": true,
+    "useNewUrlParser": true,
+    "synchronize": true,
+    "logging": false,
     "entities": [
         "./src/schemas/*.ts"
-    ],
-    "migrations": [
-        "./src/database/migrations/*.ts"
-    ],
-    "cli": {
-        "migrationsDir": "./src/database/migrations/"
-    }
+    ]
 }
