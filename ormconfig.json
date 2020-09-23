@@ -1,8 +1,6 @@
 {
     "type": "mongodb",
-    "host": "localhost",
-    "port": "27017",
-    "database:": "test",
+    "url": "mongodb+srv://deploy_sky:BSOHU6D8WbeTDALE@cluster0.olzhy.mongodb.net/<dbname>?retryWrites=true&w=majority",
     "useUnifiedTopology": true,
     "entities": [
         "./src/schemas/*.ts"
