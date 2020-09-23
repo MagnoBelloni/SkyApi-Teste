@@ -1,0 +1,16 @@
+{
+    "type": "mongodb",
+    "host": "localhost",
+    "port": "27017",
+    "database:": "test",
+    "useUnifiedTopology": true,
+    "entities": [
+        "./src/schemas/*.ts"
+    ],
+    "migrations": [
+        "./src/database/migrations/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "./src/database/migrations/"
+    }
+}
