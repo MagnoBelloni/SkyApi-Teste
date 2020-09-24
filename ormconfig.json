@@ -5,10 +5,5 @@
     "useNewUrlParser": true,
     "synchronize": true,
     "logging": false,
-    "extra": {
-        "ssl": true
-    },
-    "entities": [
-        "./dist/schemas/*.js"
-    ]
+    "entities": "./dist/schemas/*.js"
 }
