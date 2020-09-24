@@ -1,9 +1,9 @@
 {
     "type": "mongodb",
-    "uri": "mongodb+srv://deploy_sky:JiAOvBMGwHALAnii@cluster0.olzhy.mongodb.net/testesky?retryWrites=true&w=majority",
-    "useUnifiedTopology": true,
+    "url": "mongodb://admin:123@cluster0-shard-00-00.aqwoo.mongodb.net:27017,cluster0-shard-00-01.aqwoo.mongodb.net:27017,cluster0-shard-00-02.aqwoo.mongodb.net:27017/<dbname>?ssl=true&replicaSet=atlas-ctkdfv-shard-0&authSource=admin&retryWrites=true&w=majority",
     "useNewUrlParser": true,
     "synchronize": true,
     "logging": false,
-    "entities": ["dist/schemas/*.js"]
+    "entities": ["dist/schemas/*.js"],
+    "database": "testesky"
 }
