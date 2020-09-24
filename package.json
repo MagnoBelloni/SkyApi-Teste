@@ -9,6 +9,7 @@
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
     "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --ignore-watch node_modules src/server.ts",
     "start": "node dist/server.js",
+    "start:prod": "yarn build && yarn start",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "test": "jest"
   },
