@@ -15,7 +15,6 @@ API REST com NodeJS
 
 ## Rotas
 
-* A aplicação está rodando na porta 3333
 * POST /signin, realiza a autenticação.
     * Parametros no body necessários:
         * "email": "a@a.com",

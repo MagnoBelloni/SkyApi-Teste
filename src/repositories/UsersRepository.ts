@@ -1,7 +1,7 @@
 import { getMongoRepository, MongoRepository } from 'typeorm';
 
-import User from 'schemas/User';
-import ICreateUserDTO from 'dtos/ICreateUserDTO';
+import ICreateUserDTO from '../dtos/ICreateUserDTO';
+import User from '../schemas/User';
 import IUsersRepository from './IUsersRepository';
 
 export default class UsersRepository implements IUsersRepository {

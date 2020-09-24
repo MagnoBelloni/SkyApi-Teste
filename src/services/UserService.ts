@@ -3,8 +3,8 @@ import { injectable, inject } from 'tsyringe';
 import { hash } from 'bcryptjs';
 import { getMinutes } from 'date-fns';
 
-import IUsersRepository from 'repositories/IUsersRepository';
-import User from 'schemas/User';
+import User from '../schemas/User';
+import IUsersRepository from '../repositories/IUsersRepository';
 import authConfig from '../config/auth';
 import AppError from '../errors/AppError';
 

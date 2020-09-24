@@ -6,9 +6,9 @@
   "author": "Magno Belloni",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
     "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --ignore-watch node_modules src/server.ts",
-    "start": "ts-node src/server.ts",
+    "start": "node dist/server.js",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "test": "jest"
   },
@@ -25,6 +25,13 @@
     "typeorm": "^0.2.26"
   },
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.7",
     "@types/express": "^4.17.8",
@@ -33,6 +40,8 @@
     "@types/mongodb": "^3.5.27",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-transform-typescript-metadata": "^0.3.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",

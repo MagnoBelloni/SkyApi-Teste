@@ -6,6 +6,6 @@
     "synchronize": true,
     "logging": false,
     "entities": [
-        "./src/schemas/*.ts"
+        "./src/schemas/*.js"
     ]
 }

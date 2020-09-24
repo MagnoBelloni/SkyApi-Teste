@@ -1,9 +1,9 @@
 import { sign } from 'jsonwebtoken';
 import { injectable, inject } from 'tsyringe';
-import { hash, compare } from 'bcryptjs';
+import { compare } from 'bcryptjs';
 
-import IUsersRepository from 'repositories/IUsersRepository';
-import User from 'schemas/User';
+import User from '../schemas/User';
+import IUsersRepository from '../repositories/IUsersRepository';
 import authConfig from '../config/auth';
 import AppError from '../errors/AppError';
 
