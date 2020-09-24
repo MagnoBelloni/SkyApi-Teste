@@ -1,5 +1,5 @@
-import ICreateUserDTO from 'dtos/ICreateUserDTO';
-import User from 'schemas/User';
+import ICreateUserDTO from '../dtos/ICreateUserDTO';
+import User from '../schemas/User';
 
 export default interface IUsersRepository {
     findByEmail(email: string): Promise<User | undefined>;

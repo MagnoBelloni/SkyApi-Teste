@@ -1,8 +1,8 @@
 import { getMongoRepository, MongoRepository } from 'typeorm';
 
 import ICreateUserDTO from '../dtos/ICreateUserDTO';
-import User from '../schemas/User';
 import IUsersRepository from './IUsersRepository';
+import User from '../schemas/User';
 
 export default class UsersRepository implements IUsersRepository {
     private ormRepository: MongoRepository<User>;

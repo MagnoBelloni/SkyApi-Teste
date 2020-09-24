@@ -1,7 +1,7 @@
 import { sign } from 'jsonwebtoken';
 import { injectable, inject } from 'tsyringe';
 import { hash } from 'bcryptjs';
-import { getMinutes } from 'date-fns';
+import { differenceInMinutes } from 'date-fns';
 
 import User from '../schemas/User';
 import IUsersRepository from '../repositories/IUsersRepository';
@@ -43,7 +43,7 @@ export default class UserService {
             throw new AppError('Não autorizado', 401);
         }
 
-        if (getMinutes(user.ultimo_login) > 30) {
+        if (differenceInMinutes(user.ultimo_login, new Date()) > 30) {
             throw new AppError('Sessão inválida', 401);
         }
 

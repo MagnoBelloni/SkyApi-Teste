@@ -44,7 +44,7 @@ let UserService = (_dec = (0, _tsyringe.injectable)(), _dec2 = function (target,
       throw new _AppError.default('Não autorizado', 401);
     }
 
-    if ((0, _dateFns.getMinutes)(user.ultimo_login) > 30) {
+    if ((0, _dateFns.differenceInMinutes)(user.ultimo_login, new Date()) > 30) {
       throw new _AppError.default('Sessão inválida', 401);
     }
 

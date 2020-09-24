@@ -7,9 +7,9 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
-    "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --ignore-watch node_modules src/server.ts",
+    "dev:server": "ts-node-dev --inspect --ignore-watch node_modules src/server.ts",
     "start": "node dist/server.js",
-    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
     "test": "jest"
   },
   "dependencies": {
@@ -54,5 +54,8 @@
     "ts-node-dev": "^1.0.0-pre.62",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.0.2"
+  },
+  "engines": {
+      "node": "12.x"
   }
 }
