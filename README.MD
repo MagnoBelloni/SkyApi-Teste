@@ -22,15 +22,15 @@ API REST com NodeJS
 
 * POST /signup, realiza o cadastro de um novo usuário.
     * Parametros no body necessários:
-        *"nome": "Magno",
-        *"email": "a@a.com",
-        *"senha" : "123",
-        *"telefones": [
+        * "nome": "Magno",
+        * "email": "a@a.com",
+        * "senha" : "123",
+        * "telefones": [
             {
                 "ddd": "11",
                 "numero":"14959"
             }
-        ]
+          ]
 
 * GET /users/:user_id, busca informação de um usuário especifico.
     * user_id deve ser substituido pelo id do usuário desejado.
